@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 25vmin;
+  transform: rotate(70deg);
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+
+.App-header {
+  background-color: #282c34;
+  background: url(assets/new-year.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.main-text-wrapper {
+  position: absolute;
+  top: 32%;
+  left: 18%;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  background: linear-gradient(#ce6b61,#a56a64,#4386f0,#3a65a9);
+  color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  letter-spacing: 7px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.main-text-wrapper .reveal-text {
+  overflow: hidden;
+  opacity: 0;
+  margin-right: -100px;
+  transition: all 0.25s;
+  font-size: 4.5rem;
+}
+
+.main-text-wrapper .reveal-text.active {
+  opacity: 1;
+  margin-right: 0px;
+}
+
+.credits-text-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.9rem;
+}
+
+.credits-text-wrapper img {
+  vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-text-wrapper {
+    font-size: 2.7rem;
+    left: 15%;
+  }
+
+  .main-text-wrapper .reveal-text {
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-text-wrapper {
+    font-size: 2.1rem;
+    left: 7%;
+    padding: 12px;
+  }
+
+  .main-text-wrapper .reveal-text {
+    font-size: 3.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-text-wrapper {
+    font-size: 2rem;
+    left: 0;
+    padding: 25px;
+  }
+
+  .main-text-wrapper .reveal-text {
+    font-size: 3.4rem;
+  }
+
+  .credits-text-wrapper {
+    font-size: 0.75rem;
+  }
+
+  .credits-text-wrapper img {
+    width: 60px;
+  }
+}
