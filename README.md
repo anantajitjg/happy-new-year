@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Happy New Year
+
+Wish Happy New Year in a Developer's way.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
